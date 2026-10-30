@@ -188,5 +188,4 @@ terminal.
 pytest          # test suite (no live network)
 ```
 
-See `AGENTS.md` for the architecture and layer rules, and `docs/` for design
-notes.
+**By 4gatos team open source collective**
