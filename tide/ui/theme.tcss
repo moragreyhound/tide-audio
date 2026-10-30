@@ -1,0 +1,253 @@
+/* Tide - deliberate near-monochrome base.
+   No default Textual theme: every surface, border and highlight is stated
+   here. The artwork accent arrives at runtime through widget colors; this
+   file only fixes structure and the neutral base. */
+
+Screen {
+    layout: vertical;
+    background: #101110;
+    color: #e6e5e0;
+}
+
+/* --------------------------------------------------------------- header */
+#header {
+    height: 5;
+    background: #131413;
+    padding: 0 1;
+}
+
+#header-row {
+    height: 1;
+    layout: horizontal;
+}
+
+#appmark {
+    width: 8;
+    content-align: left middle;
+    text-style: bold;
+    color: #f2f1ed;
+}
+
+#tabs {
+    width: 1fr;
+    content-align: left middle;
+}
+
+#transport-state {
+    width: auto;
+    content-align: right middle;
+    color: #8d8f8a;
+}
+
+#search {
+    height: 3;
+    border: none;
+    background: #191a19;
+    color: #e6e5e0;
+    padding: 0 1;
+}
+
+#search:focus {
+    border: none;
+    background: #1f2120;
+}
+
+/* ----------------------------------------------------------------- body */
+#body {
+    height: 1fr;
+    layout: horizontal;
+}
+
+#rail {
+    width: 22;
+    background: #121312;
+    border-right: solid #26282a;
+    color: #e6e5e0;
+}
+
+#center {
+    width: 1fr;
+    layout: vertical;
+    background: #101110;
+}
+
+#listhead {
+    height: 1;
+    padding: 0 1;
+    color: #8d8f8a;
+}
+
+#list {
+    height: 1fr;
+    padding: 0 1;
+}
+
+/* ---------------------------------------------------------- downloads */
+#downloads {
+    display: none;
+    dock: right;
+    width: 46;
+    background: #141514;
+    border-left: solid #2c2e30;
+    padding: 0 1;
+    color: #e6e5e0;
+}
+
+/* --------------------------------------------------------- now playing */
+#nowplaying {
+    height: 4;
+    background: #131413;
+    padding: 0 1;
+}
+
+#np-head {
+    height: 1;
+    layout: horizontal;
+}
+
+#np-title {
+    width: 1fr;
+    content-align: left middle;
+    color: #f2f1ed;
+}
+
+#np-flags {
+    width: auto;
+    content-align: right middle;
+}
+
+#np-row {
+    height: 1;
+    layout: horizontal;
+}
+
+#np-bar {
+    width: 1fr;
+    content-align: left middle;
+}
+
+#np-times {
+    width: 22;
+    content-align: right middle;
+    color: #8d8f8a;
+}
+
+/* ----------------------------------------------------------- visualizer */
+#visualizer {
+    height: 8;
+    background: #101110;
+    padding: 0 1;
+}
+
+/* --------------------------------------------------------------- status */
+#status {
+    height: 1;
+    layout: horizontal;
+    background: #131413;
+    padding: 0 1;
+}
+
+#status-message {
+    width: 1fr;
+    content-align: left middle;
+}
+
+#status-hint {
+    width: auto;
+    content-align: right middle;
+    color: #75777a;
+}
+
+/* ------------------------------------------------------------- OptionList */
+OptionList {
+    background: #101110;
+    color: #e6e5e0;
+    border: none;
+    padding: 0;
+}
+
+OptionList > .option-list--option {
+    color: #e6e5e0;
+    background: #101110;
+}
+
+OptionList > .option-list--option-highlighted {
+    background: #24262a;
+    color: #f7f6f2;
+}
+
+OptionList > .option-list--option-hover {
+    background: #1b1d1e;
+}
+
+/* ----------------------------------------------------------------- overlays */
+HelpScreen,
+PromptScreen,
+PickerScreen {
+    align: center middle;
+    background: #00000088;
+}
+
+#help-box,
+#prompt-box,
+#picker-box {
+    width: 78;
+    max-width: 92%;
+    height: auto;
+    max-height: 86%;
+    background: #17181a;
+    border: solid #3a3d40;
+    padding: 1 2;
+}
+
+#help-title,
+#prompt-title,
+#picker-title {
+    text-style: bold;
+    color: #f2f1ed;
+    margin: 0 0 1 0;
+}
+
+#help-scroll {
+    height: auto;
+    max-height: 32;
+}
+
+#prompt-message {
+    color: #c9c8c3;
+    margin: 0 0 1 0;
+}
+
+#prompt-choices {
+    color: #9a9c98;
+}
+
+#prompt-input {
+    margin: 1 0 0 0;
+    background: #1f2120;
+    border: solid #3a3d40;
+    color: #e6e5e0;
+}
+
+#picker-list {
+    height: auto;
+    max-height: 24;
+    background: #17181a;
+    color: #e6e5e0;
+    border: none;
+}
+
+/* --------------------------------------------------------------- scrollbars */
+Scrollbar {
+    background: #131413;
+    color: #2c2e30;
+}
+
+ScrollbarHandle {
+    background: #3d4044;
+    color: #3d4044;
+}
+
+ScrollbarHandle:hover {
+    background: #4a4d51;
+}
