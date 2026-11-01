@@ -9,7 +9,8 @@ The package is split into strict layers:
 * ``ui``      - the Textual application (imported lazily by the CLI)
 
 Nothing outside ``ui`` imports Textual, so the non-UI layers stay testable
-without a terminal.
+without a terminal. 
+totally fucking vibecoded wtf is even this
 """
 
 __version__ = "0.1.0"
