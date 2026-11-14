@@ -188,4 +188,4 @@ terminal.
 pytest          # test suite (no live network)
 ```
 
-**By 4gatos team open source collective**
+**By 4gatos team open source collectivege**
